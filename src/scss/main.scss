@@ -1,10 +1,10 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,13 +17,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  margin: 0 16px;
   &__photo {
+    border: 16px solid #F6F9FD;
     border-radius: 50%;
     height: 96px;
     width: 96px;
+    margin: 98px 0 0 0;
   }
   &__greet {
+    position: absolute;
     visibility: hidden;
   }
   &__description {
@@ -33,6 +36,7 @@ body {
     font-size: 26px;
     line-height: 32px;
     text-align: center;
+    margin: 0;
     &--span {
       color: #1070ca;
     }
@@ -44,6 +48,7 @@ body {
     font-size: 16px;
     line-height: 32px;
     text-align: center;
+    margin: 16px 0 0 0;
     &--span {
       color: #4da8ff;
       font-weight: 700;
@@ -57,7 +62,77 @@ body {
     padding: 4px 24px;
     width: 240px;
     height: 48px;
-    background: #4DA8FF;
+    background: #4da8ff;
     border-radius: 64px;
+    margin: 48px 0 56px 0;
   }
 }
+
+.div-header {
+  margin-top: 40px;
+}
+
+.skills {
+  background-color: #1070ca;
+  color: #ffffff;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 64px 0 0 0;
+  }
+}
+
+.know {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  margin-top: 64px;
+
+  &__emoij {
+    font-size: 64px;
+    line-height: 72px;
+    margin: 0 0 16px 0;
+  }
+  &__list {
+    list-style-type: none;
+    margin: 0 16px;
+    padding: 0;
+    &--element {
+      font-style: normal;
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.list-bottom {
+  padding-bottom: 88px;
+}
+
+.basic::before {
+  content: url('/src/assets/img/small-tick.svg');
+margin-right: 12px;
+}
+
+.learn::before {
+  content: url('/src/assets/img/small-tick-light.svg');
+margin-right: 12px;
+}
+
+.future::before {
+  content: url('/src/assets/img/Bullet.svg');
+margin-right: 12px;
+}
+
