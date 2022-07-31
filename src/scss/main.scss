@@ -196,6 +196,7 @@ body {
     color: #808082;
     list-style-type: none;
     padding-top: 72px;
+    padding-left: 0px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -205,9 +206,6 @@ body {
       display: flex;
       justify-content: flex-end;
       margin-right: 4px;
-    }
-    &--position {
-      width: 100vw;
     }
   }
   &__discription {
