@@ -1,4 +1,4 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -6,15 +6,17 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-console.log('HELLO 🚀')
+console.log("HELLO 🚀");
 
-// fetch("https://api.github.com/users/tomek-zawadzki/repos?sort=created&direction=asc")
-//  .then(resp => resp.json())
-//  .then(resp => {
-// for (let repo of resp) {
-//     const {name, description, html_url, url} = repo;
-//     const reposData = document.querySelector('.window--js');
-//     const myTemplate =  `<div class="window window--js">
+// fetch(
+//   "https://api.github.com/users/tomek-zawadzki/repos?sort=created&direction=asc"
+// )
+//   .then((resp) => resp.json())
+//   .then((resp) => {
+//     for (let repo of resp) {
+//       const { name, description, html_url, url } = repo;
+//       const reposData = document.querySelector(".window--js");
+//       const myTemplate = `<div class="window window--js">
 //     <div class="window__dots">
 //     <img class="window__dots--element" src="/src/assets/img/circles_top.svg">
 //     </div>
@@ -25,9 +27,9 @@ console.log('HELLO 🚀')
 //       <li class="window__list--element">demo:${url}</li>
 //       <li class="window__list--element">github:${html_url}</li>
 //     </ul>`;
-//     reposData.innerHTML += myTemplate;
-// }
-// })
-// .catch(error =>{
+//       reposData.innerHTML += myTemplate;
+//     }
+//   })
+//   .catch((error) => {
 //     console.log(error);
-// })
+//   });
