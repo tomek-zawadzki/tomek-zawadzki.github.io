@@ -484,4 +484,20 @@ body {
       }
     }
   }
+
+  .contact {
+    margin-top: 176px;
+    width: 100%;
+    &__header {
+      font-size: 48px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    &__connection {
+      display: flex;
+      justify-content: center;
+      gap: 110px;
+    }
+  }
 }
